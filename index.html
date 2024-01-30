@@ -57,35 +57,36 @@
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://peterfanfan.github.io/">Guanwen Feng</a><sup>1,2</sup>,
+                <a href="https://peterfanfan.github.io/">Guanwen Feng</a><sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                Haoran Cheng<sup>1,2</sup>,
+                Haoran Cheng<sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                Yunan Li<sup>1,2</sup>,
+                <a href="https://faculty.xidian.edu.cn/LIYUNAN/zh_CN/index.htm">Yunan Li</a><sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                <a href="https://zjmazy.github.io/">Zhiyuan Ma</a><sup>1,2</sup>,
+                <a href="https://zjmazy.github.io/">Zhiyuan Ma</a><sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                Chaoneng Li<sup>1,2</sup>,
+                Chaoneng Li<sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                Zhihao Qian<sup>2</sup>,
+                Zhihao Qian<sup>3</sup>,
               </span>
               <span class="author-block">
-                Qiguang Miao<sup>1,2</sup>,
+                <a href="https://faculty.xidian.edu.cn/MQG1/zh_CN/index.htm">Qiguang Miao</a><sup>1,2,3</sup>,
               </span>
               <span class="author-block">
-                Chi-Man Pun<sup>3</sup>
+                <a href="https://www.cis.um.edu.mo/~cmpun/">Chi-Man Pun</a><sup>4</sup>
               </span>
             </div>
   
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Xi’an Key Laboratory of Big Data and Intelligent Vision, Xidian University</span><br>
-              <span class="author-block"><sup>2</sup>School of Computer Science and Technology, Xidian University</span><br>
-              <span class="author-block"><sup>3</sup>Department of Computer and Information Science, University of Macau</span>
+              <span class="author-block"><sup>2</sup>China and Key Laboratory of Collaborative lntelligence Systems, Ministry of Education, Xidian University</span><br>
+              <span class="author-block"><sup>3</sup>School of Computer Science and Technology, Xidian University</span><br>
+              <span class="author-block"><sup>4</sup>Department of Computer and Information Science, University of Macau</span>
             </div>
   
             <div class="column has-text-centered">
@@ -138,8 +139,78 @@
                   type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf">EmoSpeaker</span> generates emotional talking-head videos with input audio, emotion and source image.
+          <span class="dnerf">EmoSpeaker</span> generates emotional talking-head videos with input audio, emotion and source image. At the same time, it can also generate talking-head of different emotional intensities by adjusting the fine-grained emotion. Use the slider here to adjust the 15 fine-grained levels.
         </h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-4 has-text-centered">
+              <video id="teaser11-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000000.mp4" type="video/mp4">
+              </video>
+              <p>Angry Level 1</p>
+            </div>
+            <div class="column interpolation-video-column">
+              <div id="interpolation-video-wrapper1">
+                Loading...
+              </div>
+              <input class="slider is-fullwidth is-large is-info"
+                    id="interpolation-slider1"
+                    step="1" min="1" max="14" value="7" type="range">
+            </div>
+            <div class="column is-4 has-text-centered">
+              <video id="teaser12-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000014.mp4" type="video/mp4">
+              </video>
+              <p class="is-bold">Angry Level 15</p>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-4 has-text-centered">
+              <video id="teaser21-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000015.mp4" type="video/mp4">
+              </video>
+              <p>Happy Level 1</p>
+            </div>
+            <div class="column interpolation-video-column">
+              <div id="interpolation-video-wrapper2">
+                Loading...
+              </div>
+              <input class="slider is-fullwidth is-large is-info"
+                    id="interpolation-slider2"
+                    step="1" min="15" max="29" value="22" type="range">
+            </div>
+            <div class="column is-4 has-text-centered">
+              <video id="teaser22-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000029.mp4" type="video/mp4">
+              </video>
+              <p class="is-bold">Happy Level 15</p>
+            </div>
+          </div>
+          <div class="columns is-vcentered interpolation-panel">
+            <div class="column is-4 has-text-centered">
+              <video id="teaser31-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000030.mp4" type="video/mp4">
+              </video>
+              <p>Sad Level 1</p>
+            </div>
+            <div class="column interpolation-video-column">
+              <div id="interpolation-video-wrapper3">
+                Loading...
+              </div>
+              <input class="slider is-fullwidth is-large is-info"
+                    id="interpolation-slider3"
+                    step="1" min="30" max="44" value="37" type="range">
+            </div>
+            <div class="column is-4 has-text-centered">
+              <video id="teaser32-hdtf" autoplay muted loop playsinline height="80%">
+                <source src="./static/hdtf_video/000044.mp4" type="video/mp4">
+              </video>
+              <p class="is-bold">Sad Level 15</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -357,29 +428,161 @@
         <h3 class="title is-3">Emotional Granularity</h3>
         <div class="content has-text-justified">
           <p>
-            EmoSpeaker can also generate talking-head of different emotional intensities by adjusting the fine-grained emotion. Use the slider here to adjust the fine-grained.
+            EmoSpeaker can also generate talking-head of different emotional intensities by adjusting the fine-grained emotion. Here are 15 fine-grained demonstrations of multiple emotions. Use the slider here to adjust the fine-grained.
           </p>
         </div>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-4 has-text-centered">
-            <video id="teaser11" autoplay muted loop playsinline height="80%">
-              <source src="./static/interpolation_video/000001.mp4" type="video/mp4">
+            <video id="teaser111" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000000.mp4" type="video/mp4">
+            </video>
+            <p>Angry Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper21">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider21"
+                   step="1" min="1" max="14" value="8" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser112" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000014.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Angry Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser211" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000015.mp4" type="video/mp4">
+            </video>
+            <p>Contempt Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper22">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider22"
+                   step="1" min="15" max="29" value="22" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser212" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000029.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Contempt Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser311" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000030.mp4" type="video/mp4">
+            </video>
+            <p>Disgusted Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper23">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider23"
+                   step="1" min="30" max="44" value="37" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser312" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000044.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Disgusted Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser411" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000045.mp4" type="video/mp4">
+            </video>
+            <p>Fear Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper24">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider24"
+                   step="1" min="45" max="59" value="52" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser412" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000059.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Fear Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser511" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000060.mp4" type="video/mp4">
             </video>
             <p>Happy Level 1</p>
           </div>
           <div class="column interpolation-video-column">
-            <div id="interpolation-video-wrapper">
+            <div id="interpolation-video-wrapper25">
               Loading...
             </div>
             <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="0" min="2" max="14" value="8" type="range">
+                   id="interpolation-slider25"
+                   step="1" min="60" max="74" value="67" type="range">
           </div>
           <div class="column is-4 has-text-centered">
-            <video id="teaser12" autoplay muted loop playsinline height="80%">
-              <source src="./static/interpolation_video/000014.mp4" type="video/mp4">
+            <video id="teaser512" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000074.mp4" type="video/mp4">
             </video>
             <p class="is-bold">Happy Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser611" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000075.mp4" type="video/mp4">
+            </video>
+            <p>Sad Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper26">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider26"
+                   step="1" min="75" max="89" value="82" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser612" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000089.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Sad Level 15</p>
+          </div>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-4 has-text-centered">
+            <video id="teaser711" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000090.mp4" type="video/mp4">
+            </video>
+            <p>Surprised Level 1</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-video-wrapper27">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider27"
+                   step="1" min="90" max="104" value="97" type="range">
+          </div>
+          <div class="column is-4 has-text-centered">
+            <video id="teaser712" autoplay muted loop playsinline height="80%">
+              <source src="./static/obama_video/000104.mp4" type="video/mp4">
+            </video>
+            <p class="is-bold">Surprised Level 15</p>
           </div>
         </div>
         <br/>
